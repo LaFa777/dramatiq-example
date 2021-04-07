@@ -1,0 +1,2 @@
+dramatiq[rabbitmq, watch]
+pika
