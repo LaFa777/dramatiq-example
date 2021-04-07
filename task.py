@@ -43,11 +43,10 @@ def task_without_error():
 
 
 @dramatiq.actor
-def task_print_result(result):
+def task_print_result(task_execute_info, result):
     print(result)
 
 
 @dramatiq.actor
-def task_print_error(*err):
-    print(err)
+def task_print_error(task_execute_info, err):
     print("Ну что ж...")
